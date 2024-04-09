@@ -15,7 +15,6 @@ exports.signUpInput = zod_1.default.object({
 exports.signInInput = zod_1.default.object({
     email: zod_1.default.string().email(),
     password: zod_1.default.string().min(6),
-    name: zod_1.default.string().min(1, { message: "Name is Required" }),
 });
 // NOTE: Create Blog
 exports.createBlogInput = zod_1.default.object({

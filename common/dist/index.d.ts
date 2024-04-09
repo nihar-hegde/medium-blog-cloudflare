@@ -16,15 +16,12 @@ export type SignUpInput = z.infer<typeof signUpInput>;
 export declare const signInInput: z.ZodObject<{
     email: z.ZodString;
     password: z.ZodString;
-    name: z.ZodString;
 }, "strip", z.ZodTypeAny, {
     email: string;
     password: string;
-    name: string;
 }, {
     email: string;
     password: string;
-    name: string;
 }>;
 export type SignInInput = z.infer<typeof signInInput>;
 export declare const createBlogInput: z.ZodObject<{

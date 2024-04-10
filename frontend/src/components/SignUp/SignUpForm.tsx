@@ -22,7 +22,7 @@ export const SignUpForm = () => {
       const jwt = response.data;
       localStorage.setItem("token", jwt);
       alert("User Created");
-      navigate("/blog");
+      navigate("/blogs");
     } catch (error) {
       alert("Error while signing up");
       console.log(error);

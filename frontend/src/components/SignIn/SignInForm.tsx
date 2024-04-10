@@ -20,7 +20,7 @@ export const SignInForm = () => {
       const token = response.data;
       localStorage.setItem("token", token.jwt);
       alert("Sign in success");
-      navigate("/blog");
+      navigate("/blogs");
     } catch (error) {
       alert("Error While Signing in");
       console.log(error);
